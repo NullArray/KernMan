@@ -16,7 +16,7 @@ function logo()
 logo	
 
 function usage()
-{	printf "\nKernMan is a script written for the purpuse of simplyfying Kernel Managenemt.
+{	printf "\nKernMan is a script written for the purpose of simplifying Kernel Management.
 	
 Select the option 'List' to display all installed kernels Select the option 'Purge' to display 
 all kernels that can be removed and subsequently do so\n\n"
