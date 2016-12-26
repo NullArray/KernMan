@@ -43,12 +43,12 @@ do
             read -p 'Continue? Y/n ' choice
             
             if [[ $choice == "y" ]]; then
-				sudo apt-get purge $(dpkg -l linux-{image,headers}-"[0-9]*" | awk '/ii/{print $2}' | grep -ve "$(uname -r | sed -r 's/-[a-z]+//')")
-			else
-				echo "Aborted"
-				break
-				exit 1
-			fi
+		sudo apt-get purge $(dpkg -l linux-{image,headers}-"[0-9]*" | awk '/ii/{print $2}' | grep -ve "$(uname -r | sed -r 's/-[a-z]+//')")
+	    else
+		echo "Aborted"
+		break
+		exit 1
+	    fi
             ;;
         "Quit")
             break
