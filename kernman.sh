@@ -19,7 +19,7 @@ function usage()
 {	printf "\nKernMan is a script written for the purpuse of simplyfying Kernel Managenemt.
 	
 Select the option 'List' to display all installed kernels Select the option 'Purge' to display 
-1all kernels that can be removed and subsequently do so\n\n"
+all kernels that can be removed and subsequently do so\n\n"
 	}
 	
 	
@@ -30,7 +30,7 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Usage")
-			usage
+	    usage
             ;;
         "List")
             dpkg -l linux-image-\* | grep ^ii
