@@ -11,4 +11,4 @@ cd KernMan
 chmod +x kernman.sh
 ```
 
-`After which you can start the script from your terminal with `sudo ./kernman.sh`
+After which you can start the script from your terminal with `sudo ./kernman.sh`
